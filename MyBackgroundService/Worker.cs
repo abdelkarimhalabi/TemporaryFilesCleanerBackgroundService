@@ -22,7 +22,7 @@ public class Worker : BackgroundService
 
             _tempFileService.DeleteTempFiles();
 
-            await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
+            await Task.Delay(TimeSpan.FromHours(6), stoppingToken);
         }
     }
 }
